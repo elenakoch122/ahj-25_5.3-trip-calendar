@@ -32,15 +32,12 @@ body {
   "h h"
   "i i"
   ;
+  grid-gap: 10px;
 }
 
 .header {
   font-size: 1.5rem;
   grid-area: a;
-}
-
-.block {
-  margin-top: 10px;
 }
 
 .block-from {
@@ -57,7 +54,6 @@ body {
 
 .block-children-10 {
   grid-area: e;
-  margin-left: 5px;
 }
 
 .block-children-5 {
@@ -66,7 +62,6 @@ body {
 
 .block-roundtrip {
   grid-area: g;
-  margin-left: 5px;
 }
 
 .block-date {
@@ -80,6 +75,35 @@ body {
   padding: 5px;
   border: none;
 }
+
+.input:focus {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+}
+
+.checkbox-el::after {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 5px;
+  padding: 6px;
+  background-color: #fff;
+}
+
+.checkbox:checked ~ .checkbox-el::after {
+  background-image: url('../img/icon_checkbox_mark.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 25px;
+} 
 
 .button {
   grid-area: i;

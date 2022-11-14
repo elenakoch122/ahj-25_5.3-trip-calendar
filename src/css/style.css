@@ -14,11 +14,11 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   margin-top: 50px;
 }
 
 .ticket-search {
+  min-width: 350px;
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 20px;
@@ -64,8 +64,16 @@ body {
   grid-area: g;
 }
 
-.block-date {
+.block-date, .block-date-roundtrip {
   grid-area: h;
+}
+
+.block-date-roundtrip {
+  display: flex;
+}
+
+.block-date-there, .block-date-back {
+  flex: 1;
 }
 
 .input {

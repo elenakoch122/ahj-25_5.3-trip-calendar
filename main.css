@@ -1,0 +1,126 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(1a27d2d89b989fc8806e.jpg);
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.ticket-search {
+  min-width: 350px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-areas:
+  "a a"
+  "b b"
+  "c c"
+  "d e"
+  "f g"
+  "h h"
+  "i i"
+  ;
+  grid-gap: 10px;
+}
+
+.header {
+  font-size: 1.5rem;
+  grid-area: a;
+}
+
+.block-from {
+  grid-area: b;
+}
+
+.block-to {
+  grid-area: c;
+}
+
+.block-adults {
+  grid-area: d;
+}
+
+.block-children-10 {
+  grid-area: e;
+}
+
+.block-children-5 {
+  grid-area: f;
+}
+
+.block-roundtrip {
+  grid-area: g;
+}
+
+.block-date, .block-date-roundtrip {
+  grid-area: h;
+}
+
+.block-date-roundtrip {
+  display: flex;
+}
+
+.block-date-there, .block-date-back {
+  flex: 1;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  border: none;
+}
+
+.input:focus {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+}
+
+.checkbox-el::after {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 5px;
+  padding: 6px;
+  background-color: #fff;
+}
+
+.checkbox:checked ~ .checkbox-el::after {
+  background-image: url(bbaa5071afb2da4d2568.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 25px;
+} 
+
+.button {
+  grid-area: i;
+  background-color: red;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+}
+
+
+/*# sourceMappingURL=main.css.map*/

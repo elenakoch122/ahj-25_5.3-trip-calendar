@@ -2,7 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/cm6rg7whoutntevt?svg=true)](https://ci.appveyor.com/project/elenakoch122/ahj-25-5-3-trip-calendar)
 
-GitHub Pages: 
+GitHub Pages: https://elenakoch122.github.io/ahj-25_5.3-trip-calendar/
 
 ### Trip Calendar* (задача со звёздочкой)
 
